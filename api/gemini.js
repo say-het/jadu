@@ -42,8 +42,8 @@ app.post("/api/gemini", async (req, res) => {
 });
 
 app.get("/api/cbow", (req, res) => {
-  res.send(`
-    from functools import partial
+  res.type("text/plain").send(`
+from functools import partial
 import numpy as np
 
 import torch
