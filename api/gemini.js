@@ -17,7 +17,7 @@ app.post("/api/gemini", async (req, res) => {
 
     const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
     const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyDyZ2I-K6GN4cnzcqgseb9PPrLurQX1pi8`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyDyZ2I-K6GN4cnzcqgseb9PPrLurQX1pi8`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
