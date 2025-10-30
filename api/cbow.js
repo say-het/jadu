@@ -1,5 +1,5 @@
 export default function handler(req, res) {
-  res.type("text/plain").send(`
+  res.send(`
 from functools import partial
 import numpy as np
 
