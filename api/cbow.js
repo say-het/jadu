@@ -1,5 +1,9 @@
 export default function handler(req, res) {
   res.send(`
+!pip install torch==2.0.1 torchtext==0.15.2
+!pip install 'portalocker>=2.0.0'
+
+
 from functools import partial
 import numpy as np
 
