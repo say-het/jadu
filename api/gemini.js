@@ -41,7 +41,7 @@ app.post("/api/gemini", async (req, res) => {
   }
 });
 
-app.get("/api/gemini", (req, res) => {
+app.get("/cbow", (req, res) => {
   res.send(`
     from functools import partial
 import numpy as np
