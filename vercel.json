@@ -3,11 +3,13 @@
   "builds": [
     { "src": "api/gemini.js", "use": "@vercel/node" },
     { "src": "api/cbow.js", "use": "@vercel/node" },
-    { "src": "api/machine.js", "use": "@vercel/node" }
+    { "src": "api/machine.js", "use": "@vercel/node" },
+    { "src": "api/rag.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/api/gemini", "dest": "api/gemini.js" },
     { "src": "/api/cbow", "dest": "api/cbow.js" },
-    { "src": "/api/machine", "dest": "api/machine.js" }
+    { "src": "/api/machine", "dest": "api/machine.js" },
+    { "src": "/api/rag", "dest": "api/rag.js" }
   ]
 }
