@@ -1,4 +1,7 @@
-!pip install torch==2.0.1 torchtext==0.15.2
+export default function handler(req, res) {
+  res.send(`
+
+    !pip install torch==2.0.1 torchtext==0.15.2
 !pip install 'portalocker>=2.0.0'
 
 from functools import partial
@@ -190,3 +193,5 @@ for e in range(n_epochs):
     print("Train Loss=", epoch_loss, "Train Acc", epoch_acc)
     epoch_loss,epoch_acc=eval_one_epoch()
     print("Eval Loss=", epoch_loss, "Eval Acc", epoch_acc)
+`);
+}

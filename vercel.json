@@ -8,6 +8,7 @@
     { "src": "api/lang.js", "use": "@vercel/node" },
     { "src": "api/att.js", "use": "@vercel/node" },
     { "src": "api/txt.js", "use": "@vercel/node" },
+    { "src": "api/senti.js", "use": "@vercel/node" },
     { "src": "api/ans.js", "use": "@vercel/node" }
   ],
   "routes": [
@@ -17,6 +18,7 @@
     { "src": "/api/rag", "dest": "api/rag.js" },
     { "src": "/api/lang", "dest": "api/lang.js" },
     { "src": "/api/att", "dest": "api/att.js" },
-    { "src": "/api/ans", "dest": "api/ans.js" }
+    { "src": "/api/ans", "dest": "api/ans.js" },
+    { "src": "/api/senti", "dest": "api/enti.js" }
   ]
 }
