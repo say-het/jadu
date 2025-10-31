@@ -5,13 +5,15 @@
     { "src": "api/cbow.js", "use": "@vercel/node" },
     { "src": "api/machine.js", "use": "@vercel/node" },
     { "src": "api/rag.js", "use": "@vercel/node" },
-    { "src": "api/lang.js", "use": "@vercel/node" }
+    { "src": "api/lang.js", "use": "@vercel/node" },
+    { "src": "api/att.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/api/gemini", "dest": "api/gemini.js" },
     { "src": "/api/cbow", "dest": "api/cbow.js" },
     { "src": "/api/machine", "dest": "api/machine.js" },
     { "src": "/api/rag", "dest": "api/rag.js" },
-    { "src": "/api/lang", "dest": "api/lang.js" }
+    { "src": "/api/lang", "dest": "api/lang.js" },
+    { "src": "/api/att", "dest": "api/att.js" }
   ]
 }
