@@ -1,11 +1,11 @@
 export default function handler(req, res) {
   res.send(`
 
-from langchain_community.document_loaders import TextLoader   # To load text documents
-from langchain.text_splitter import RecursiveCharacterTextSplitter  # For chunking large texts
-from langchain_community.embeddings import HuggingFaceEmbeddings    # For embedding generation
-from langchain_chroma import Chroma   # Vector store for storing/retrieving embeddings
-from langchain_google_genai import ChatGoogleGenerativeAI  # Google Gemini model for chat
+from langchain_community.document_loaders import TextLoader   
+from langchain.text_splitter import RecursiveCharacterTextSplitter  
+from langchain_community.embeddings import HuggingFaceEmbeddings    
+from langchain_chroma import Chroma   
+from langchain_google_genai import ChatGoogleGenerativeAI  
 from dotenv import load_dotenv
 import os
 
@@ -75,5 +75,6 @@ response = model.invoke([
 
 print("\nGemini Response:")
 print(response.content if hasattr(response, "content") else response)
+
 `);
 }
