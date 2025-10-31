@@ -7,7 +7,8 @@
     { "src": "api/rag.js", "use": "@vercel/node" },
     { "src": "api/lang.js", "use": "@vercel/node" },
     { "src": "api/att.js", "use": "@vercel/node" },
-    { "src": "api/txt.js", "use": "@vercel/node" }
+    { "src": "api/txt.js", "use": "@vercel/node" },
+    { "src": "api/ans.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/api/gemini", "dest": "api/gemini.js" },
@@ -16,6 +17,6 @@
     { "src": "/api/rag", "dest": "api/rag.js" },
     { "src": "/api/lang", "dest": "api/lang.js" },
     { "src": "/api/att", "dest": "api/att.js" },
-    { "src": "/api/txt", "dest": "api/txt.js" }
+    { "src": "/api/ans", "dest": "api/ans.js" }
   ]
 }
