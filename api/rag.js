@@ -37,12 +37,12 @@ if not os.path.exists(pers_dir):
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
     db = Chroma.from_documents(documents=chunks, embedding=embeddings, persist_directory=pers_dir)
-    print("✅ Vector store created successfully.")
+    print("Vector store created successfully.")
 
 else:
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     db = Chroma(persist_directory=pers_dir, embedding_function=embeddings)
-    print("✅ Existing vector store loaded.")
+    print("Existing vector store loaded.")
 
 query = "How was Ayodhya?"
 
@@ -73,7 +73,7 @@ response = model.invoke([
     {"role": "user", "content": f"Context:\n{context}\n\nQuestion:\n{query}"}
 ])
 
-print("\n🔹 Gemini Response:")
+print("\nGemini Response:")
 print(response.content if hasattr(response, "content") else response)
 `);
 }
