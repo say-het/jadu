@@ -65,8 +65,8 @@ def collate_fn(batch):
     src_batch, tgt_batch, src_len = [], [], []
     for src_sample, tgt_sample in batch:
         
-        src_sample=src_sample.rstrip("\n") 
-        tgt_sample=tgt_sample.rstrip("\n")
+        src_sample=src_sample.rstrip("") 
+        tgt_sample=tgt_sample.rstrip("")
         
         src_tokens=de_tokenizer(src_sample)
         tgt_tokens=en_tokenizer(tgt_sample)
@@ -226,7 +226,6 @@ def eval_one_epoch(e,n_epochs):
                 src_sentence=" ".join(src_sentence_tokens)
                 gt_sentence_tokens=vocab_en.lookup_tokens(t_ids[:,1:].tolist()[0])
                 gt_sentence=" ".join(gt_sentence_tokens)
-                print("\n-----------------------------------")
                 print("Source Sentence:",src_sentence)
                 print("GT Sentence:",gt_sentence)
                 print("Predicted Sentence:",pred_sentence)
