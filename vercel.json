@@ -9,7 +9,8 @@
     { "src": "api/att.js", "use": "@vercel/node" },
     { "src": "api/txt.js", "use": "@vercel/node" },
     { "src": "api/senti.js", "use": "@vercel/node" },
-    { "src": "api/ans.js", "use": "@vercel/node" }
+    { "src": "api/ans.js", "use": "@vercel/node" },
+    { "src": "api/p1.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/api/gemini", "dest": "api/gemini.js" },
@@ -19,6 +20,7 @@
     { "src": "/api/lang", "dest": "api/lang.js" },
     { "src": "/api/att", "dest": "api/att.js" },
     { "src": "/api/ans", "dest": "api/ans.js" },
-    { "src": "/api/senti", "dest": "api/enti.js" }
+    { "src": "/api/senti", "dest": "api/senti.js" },
+    { "src": "/api/p1", "dest": "api/p1.js" }
   ]
 }
