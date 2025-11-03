@@ -10,7 +10,22 @@
     { "src": "api/txt.js", "use": "@vercel/node" },
     { "src": "api/senti.js", "use": "@vercel/node" },
     { "src": "api/ans.js", "use": "@vercel/node" },
-    { "src": "api/p1.js", "use": "@vercel/node" }
+    { "src": "api/p1.js", "use": "@vercel/node" },
+    { "src": "api/p2.js", "use": "@vercel/node" },
+    { "src": "api/p4.js", "use": "@vercel/node" },
+    { "src": "api/p5.js", "use": "@vercel/node" },
+    { "src": "api/p6.js", "use": "@vercel/node" },
+    { "src": "api/p7.js", "use": "@vercel/node" },
+    { "src": "api/p8.js", "use": "@vercel/node" },
+    { "src": "api/kmean.js", "use": "@vercel/node" },
+    { "src": "api/linreg.js", "use": "@vercel/node" },
+    { "src": "api/naive.js", "use": "@vercel/node" },
+    { "src": "api/perc.js", "use": "@vercel/node" },
+    { "src": "api/reg.js", "use": "@vercel/node" },
+    { "src": "api/svm.js", "use": "@vercel/node" },
+    { "src": "api/tree.js", "use": "@vercel/node" },
+    { "src": "api/xor.js", "use": "@vercel/node" },
+    { "src": "api/p10.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/api/gemini", "dest": "api/gemini.js" },
@@ -21,6 +36,21 @@
     { "src": "/api/att", "dest": "api/att.js" },
     { "src": "/api/ans", "dest": "api/ans.js" },
     { "src": "/api/senti", "dest": "api/senti.js" },
-    { "src": "/api/p1", "dest": "api/p1.js" }
+    { "src": "/api/p1", "dest": "api/p1.js" },
+    { "src": "/api/p2", "dest": "api/p2.js" },
+    { "src": "/api/p4", "dest": "api/p4.js" },
+    { "src": "/api/p5", "dest": "api/p5.js" },
+    { "src": "/api/p6", "dest": "api/p6.js" },
+    { "src": "/api/p7", "dest": "api/p7.js" },
+    { "src": "/api/p8", "dest": "api/p8.js" },
+    { "src": "/api/p10", "dest": "api/p10.js" },
+    { "src": "/api/kmean", "dest": "api/kmean.js" },
+    { "src": "/api/linreg", "dest": "api/linreg.js" },
+    { "src": "/api/naive", "dest": "api/naive.js" },
+    { "src": "/api/perc", "dest": "api/perc.js" },
+    { "src": "/api/reg", "dest": "api/reg.js" },
+    { "src": "/api/svm", "dest": "api/svm.js" },
+    { "src": "/api/tree", "dest": "api/tree.js" },
+    { "src": "/api/xor", "dest": "api/xor.js" }
   ]
 }
