@@ -25,7 +25,11 @@
     { "src": "api/svm.js", "use": "@vercel/node" },
     { "src": "api/tree.js", "use": "@vercel/node" },
     { "src": "api/xor.js", "use": "@vercel/node" },
-    { "src": "api/p10.js", "use": "@vercel/node" }
+    { "src": "api/dav1.js", "use": "@vercel/node" },
+    { "src": "api/dav2.js", "use": "@vercel/node" },
+    { "src": "api/dav6.js", "use": "@vercel/node" },
+    { "src": "api/dav7.js", "use": "@vercel/node" },
+    { "src": "api/davpre.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/api/gemini", "dest": "api/gemini.js" },
@@ -51,6 +55,11 @@
     { "src": "/api/reg", "dest": "api/reg.js" },
     { "src": "/api/svm", "dest": "api/svm.js" },
     { "src": "/api/tree", "dest": "api/tree.js" },
-    { "src": "/api/xor", "dest": "api/xor.js" }
+    { "src": "/api/xor", "dest": "api/xor.js" },
+    { "src": "/api/dav1", "dest": "api/xor.js" },
+    { "src": "/api/dav2", "dest": "api/dav2.js" },
+    { "src": "/api/dav6", "dest": "api/dav6.js" },
+    { "src": "/api/dav7", "dest": "api/dav7.js" },
+    { "src": "/api/davpre", "dest": "api/davpre.js" }
   ]
 }
