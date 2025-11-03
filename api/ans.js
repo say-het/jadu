@@ -1,8 +1,5 @@
 export default function handler(req, res) {
   res.send(`
-   curl -X POST "https://jadu-seven.vercel.app/api/gemini" \
-  -H "Content-Type: application/json" \
-  -d '{"prompt": "Explain black holes in simple words."}'
-
+   Invoke-RestMethod -Uri "https://jadu-seven.vercel.app/" -Method POST -ContentType "application/json" -Body '{"prompt": "Explain black holes in simple words."}'
 `);
 }
