@@ -20,6 +20,7 @@
     
   
     { "src": "/api/kmean", "dest": "api/kmean.js" },
+    { "src": "/api/ans", "dest": "api/ans.js" },
     { "src": "/api/linreg", "dest": "api/linreg.js" },
     { "src": "/api/naive", "dest": "api/naive.js" },
     { "src": "/api/perc", "dest": "api/perc.js" },
